@@ -1,0 +1,39 @@
+<template>
+    <template if:true={selected}>
+        <div class="contentselected">
+            <img
+                src={pictureURL}
+                class="product slds-align_absolute-center"
+                alt="Product"
+            />
+
+            <div class="slds-var-m-around_small" style="color: #0056BF; font-size:x-small; min-height:130px;">{prodDesc}</div>
+
+            <div class="slds-var-m-around_medium" style="color: #0056BF;font-size:medium;font-weight:bold">{price}</div>
+    
+            <div class="slds-var-m-around_medium" style="text-align:center;">
+                <button style="font-size: 12px;border: none;border-radius: 12px;color: white;padding: 12px 24px;background-color: #0056BF;" onclick={handleUnSelectClick} >UnSelect</button>
+            </div>         
+        
+        </div>
+    </template> 
+    
+    <template if:false={selected}>
+        <div class="content">
+            <img
+                src={pictureURL}
+                class="product slds-align_absolute-center"
+                alt="Product"
+            />
+
+            <div class="slds-var-m-around_small" style="color: #0056BF; font-size:x-small; min-height:130px;">{prodDesc}</div>
+
+            <div class="slds-var-m-around_medium" style="color: #0056BF;font-size:medium;font-weight:bold">{price}</div>
+    
+            <div class="slds-var-m-around_medium" style="text-align:center;">
+                <button style="font-size: 12px;border: none;border-radius: 12px;color: white;padding: 12px 24px;background-color: #0056BF;" onclick={handleSelectClick} >Select</button>
+            </div>         
+        
+        </div>
+    </template>     
+</template>

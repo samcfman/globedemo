@@ -1,0 +1,25 @@
+.content {
+    padding: 12px;
+    background-color: #ffffff;
+    border-radius: 0.25rem;
+    height: 400px;
+    min-width: 200px;
+}
+
+.contentselected {
+    padding: 12px;
+    background-color: #d8dde6;
+    border-radius: 0.25rem;
+    height: 400px;
+    min-width: 200px;
+}
+
+img.product {
+    height: 120px;
+    max-width: initial;
+    pointer-events: none;
+}
+
+.proddesc {
+    padding: 6px;
+}

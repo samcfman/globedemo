@@ -1,0 +1,57 @@
+<template>
+    <div class="slds-align_absolute-center" style="color: #0056BF;font-weight:bold;font-size:24px">
+        Please Select Globe At Home Broadband & Mobile Plan: 
+    </div>
+<div class="c-container">
+    <lightning-layout horizontal-align="space">
+        <lightning-layout-item padding="around-small">
+            <div class="custom-box">
+                <c-fso-product                
+                product-code="globe100"
+                >
+                </c-fso-product>               
+            </div>
+        </lightning-layout-item>
+        <lightning-layout-item padding="around-small">
+                <div class="custom-box">
+                    <c-fso-product                
+                    product-code="globe50"
+                    >
+                    </c-fso-product>               
+                </div>
+        </lightning-layout-item>
+        <lightning-layout-item padding="around-small">
+                    <div class="custom-box">
+                        <c-fso-product                
+                        product-code="globe30"
+                        >
+                        </c-fso-product>               
+                    </div>
+
+        </lightning-layout-item>
+
+        <lightning-layout-item padding="around-small">
+            <div class="custom-box">
+                <c-fso-product                
+                product-code="plus599"
+                >
+                </c-fso-product>               
+            </div>
+        </lightning-layout-item>
+        <lightning-layout-item padding="around-small">
+                <div class="custom-box">
+                    <c-fso-product                
+                    product-code="plus799"
+                    >
+                    </c-fso-product>               
+                </div>
+
+        </lightning-layout-item>        
+    </lightning-layout>
+
+    <div class="slds-var-m-around_medium" style="text-align:right;">
+        <button style="font-size: 12px;border: none;border-radius: 12px;color: white;padding: 12px 24px;background-color: #0056BF;" onclick={handleButtonClick} >Create Order</button>
+    </div> 
+
+</div>
+</template>
